@@ -24,3 +24,7 @@ def hello_world():
     password = g.cursor.fetchall()
     print(password)
     return render_template("index.html", password=password)
+
+
+if __name__ == "__main__":
+    app.run()

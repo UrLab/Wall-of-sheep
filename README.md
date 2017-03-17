@@ -14,8 +14,7 @@ See [https://www.wallofsheep.com/pages/wall-of-sheep](https://www.wallofsheep.co
     sudo ./create_ap wlp2s0 enp0s25 pds-wall-of-sheep urlabULB
 
 ## Steal passwd:
-    sudo tcpdump -i wlp2s0 tcp port 80 -vv | python parse.py
+    sudo tcpdump -i wlp2s0 tcp port 80 -vv | python3 parse.py
 
 ## Run the webserver:
-    export FLASK_APP=app.py
-    flask run
+    python3 app.py
