@@ -22,7 +22,6 @@ def open_db():
 def hello_world():
     g.cursor.execute("SELECT * FROM password ORDER BY id DESC LIMIT 30")
     password = g.cursor.fetchall()
-    print(password)
     return render_template("index.html", password=password)
 
 
