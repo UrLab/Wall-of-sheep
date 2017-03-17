@@ -1,5 +1,10 @@
 # Wall of sheep
+See [https://www.wallofsheep.com/pages/wall-of-sheep](https://www.wallofsheep.com/pages/wall-of-sheep)
 
+## Required logiciel:
+* tcpdump
+* postgresql
+* create_ap
 
 ## Create the database:
     createdb wifisteal
@@ -11,5 +16,5 @@
 
 
 ## Run the webserver:
-   export FLASK_APP=app.py
-   flask run
+    export FLASK_APP=app.py
+    flask run
