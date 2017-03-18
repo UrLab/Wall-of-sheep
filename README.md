@@ -5,6 +5,7 @@ See [https://www.wallofsheep.com/pages/wall-of-sheep](https://www.wallofsheep.co
 * tcpdump
 * postgresql
 * create_ap
+* driftnet
 
 ## Create the database:
     createdb wifisteal
@@ -15,6 +16,9 @@ See [https://www.wallofsheep.com/pages/wall-of-sheep](https://www.wallofsheep.co
 
 ## Steal passwd:
     sudo tcpdump -i wlp2s0 tcp port 80 -vv | python3 parse.py
+
+## Get all images:
+    sudo driftnet -i wlp2s0
 
 ## Run the webserver:
     python3 app.py
